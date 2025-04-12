@@ -1,4 +1,4 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+In this project, I build a **Nxt Trendz** 
 
 ### Refer to the video below:
 
@@ -35,41 +35,41 @@ In this project, let's build a **Nxt Trendz - Cart Features** by applying the co
 ### Completion Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionality is added</summary>
 <br/>
 
-The app must have the following functionalities
+The app is have the following functionalities
 
-- When invalid credentials are provided in the login form and **Login** button is clicked, then the respective error message from the response should be displayed
-- When the **username** and **password** are provided correctly and **Login** button is clicked, then the page should navigate to Home Route
-- When an unauthenticated user tries to access the **Cart** Route, then the page should be navigated to **Login** Route
+- When invalid credentials are provided in the login form and **Login** button is clicked, then the respective error message from the response will be displayed
+- When the **username** and **password** are provided correctly and **Login** button is clicked, then the page will navigate to Home Route
+- When an unauthenticated user tries to access the **Cart** Route, then the page will be navigated to **Login** Route
 
 - Following are the features to be implemented
 
   - Feature 1
 
     - When an authenticated user tries to add the same product multiple times
-      - The quantity of the product should be updated accordingly, and the count of the cart items in the header should be remained same
+      - The quantity of the product will be updated accordingly, and the count of the cart items in the header will be remained same
 
   - Feature 2
 
-    - The total amount and number of items in the cart should be displayed in the **Cart** Route
+    - The total amount and number of items in the cart will be displayed in the **Cart** Route
 
   - Feature 3
 
     - In each cart item in the cart
-      - When the plus icon is clicked, then the quantity of the product should be incremented by one
-      - When the minus icon is clicked, then the quantity of the product should be decremented by one
-      - When the quantity of the product is one and the minus icon is clicked, then the respective product should be removed from the cart
-      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost should be updated accordingly
+      - When the plus icon is clicked, then the quantity of the product will be incremented by one
+      - When the minus icon is clicked, then the quantity of the product will be decremented by one
+      - When the quantity of the product is one and the minus icon is clicked, then the respective product will be removed from the cart
+      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost will be updated accordingly
 
   - Feature 4
 
-    - When an authenticated user clicks on the remove button, cart item should be removed from the cart list
+    - When an authenticated user clicks on the remove button, cart item will be removed from the cart list
 
   - Feature 5
 
-    - When an authenticated user clicks on the **Remove All** button, all the cart items should be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
+    - When an authenticated user clicks on the **Remove All** button, all the cart items will be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
 
 - The `CartContext` has an object as a value with the following properties
   - `cartList` - this key stores the cart items
@@ -138,15 +138,15 @@ Returns a response based on the credentials provided
 <summary>Implementation Files</summary>
 <br/>
 
-Use these files to complete the implementation:
+I Used this files to complete the implementation:
 
+- `src/App.js`
 - `src/components/LoginForm/index.js`
 - `src/components/LoginForm/index.css`
 - `src/components/Home/index.js`
 - `src/components/Home/index.css`
 - `src/components/Header/index.js`
 - `src/components/Header/index.css`
-- `src/App.js`
 - `src/components/Cart/index.js`
 - `src/components/Cart/index.css`
 - `src/components/CartItem/index.js`
@@ -161,7 +161,7 @@ Use these files to complete the implementation:
 <summary>Click to view</summary>
 <br>
 
-- You can use the `box-shadow` CSS property to apply the box-shadow effect to containers
+- I used the `box-shadow` CSS property to apply the box-shadow effect to containers
 
   ```
     box-shadow: 0px 4px 16px 0px #bfbfbf;
@@ -170,7 +170,7 @@ Use these files to complete the implementation:
   <br/>
    <img src="https://assets.ccbp.in/frontend/content/react-js/box-shadow-img.png" alt="box shadow" style="width:200px" />
 
-- You can use the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
+- I used the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
 
   ```
     cursor: pointer;
@@ -179,7 +179,7 @@ Use these files to complete the implementation:
   <br/>
    <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
 
-- You can use the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
+- I used the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
 
   ```
     outline: none;
@@ -206,22 +206,21 @@ Use these files to complete the implementation:
 
 <br/>
 
-**The following instructions are required for the tests to pass**
+**I implemented the following instructions are **
 
-- `Home` route should consist of `/` in the URL path
-- `Login` route should consist of `/login` in the URL path
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
+- `Home` route will consist of `/` in the URL path
+- `Login` route will consist of `/login` in the URL path
 - User credentials
 
   ```text
    username: rahul
    password: rahul@2021
   ```
-- `BsPlusSquare`, `BsDashSquare` icons from `react-icons` should be used for **plus** and **minus** buttons in cart item
-- The Cart Item should consist of two HTML button elements with data-testid attribute values as **plus** and **minus** respectively
-- `AiFillCloseCircle` icon from react-icons should be used for **remove** button in cartItem
-- The Cart Item should consist of an HTML button element with data-testid attribute values as **remove**
-- The product image in **Cart Item** Route should have the alt as `title` of the product
+- `BsPlusSquare`, `BsDashSquare` icons from `react-icons` will be used for **plus** and **minus** buttons in cart item
+- The Cart Item will consist of two HTML button elements with data-testid attribute values as **plus** and **minus** respectively
+- `AiFillCloseCircle` icon from react-icons will be used for **remove** button in cartItem
+- The Cart Item will consist of an HTML button element with data-testid attribute values as **remove**
+- The product image in **Cart Item** Route will have the alt as `title` of the product
 
 - Prime User credentials
 
